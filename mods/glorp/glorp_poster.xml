@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Angry Glorp Poster" identifier="glorpangry" description="glorp" category="Decorative" scale="0.5" maxstacksize="4" pickdistance="200" tags="mediumitem" isshootable="True" Indestructible="True" AllowRotatingInEditor="True" CanFlipX="False" CanFlipY="False">
+    <Body width="220" height="220" density="10" />
+    <Sprite texture="%ModDir%/textures/glorp_angry.png" depth="0.845" sourcerect="00,00,220,220" origin="0.5,0.5" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetach" PickingTime="1" aimpos="0,0" handle1="0,0" Attachable="True" AttachedByDefault="True" Aimable="True" />
+    <Price baseprice="60" soldeverywhere="false">
+      <Price storeidentifier="merchantoutpost" maxavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" maxavailable="2" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="5" amount="1">
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Deconstruct time="1">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="65" fabricationlimitmin="1" fabricationlimitmax="1" />
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab,abandonedstoragecab,steelcabinetwrecked,mediumsteelcabinetwrecked" maxamount="1" spawnprobability="0.003" allowtransfershere="False" />
+  </Item>
+  <Item name="Nervous Glorp Poster" identifier="glorpnervous" description="glorp" category="Decorative" scale="0.5" maxstacksize="4" pickdistance="200" tags="mediumitem" isshootable="True" Indestructible="True" AllowRotatingInEditor="True" CanFlipX="False" CanFlipY="False">
+    <Body width="220" height="220" density="10" />
+    <Sprite texture="%ModDir%/textures/glorp_nervous.png" depth="0.845" sourcerect="00,00,220,220" origin="0.5,0.5" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetach" PickingTime="1" aimpos="0,0" handle1="0,0" Attachable="True" AttachedByDefault="True" Aimable="True" />
+    <Price baseprice="60" soldeverywhere="false">
+      <Price storeidentifier="merchantoutpost" maxavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" maxavailable="2" multiplier="0.9" />
+    </Price>
+    <Fabricate suitablefabricators="medicalfabricator" requiredtime="5" amount="1">
+      <RequiredItem identifier="organicfiber" />
+    </Fabricate>
+    <Deconstruct time="1">
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="65" fabricationlimitmin="1" fabricationlimitmax="1" />
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab,abandonedstoragecab,steelcabinetwrecked,mediumsteelcabinetwrecked" maxamount="1" spawnprobability="0.003" allowtransfershere="False" />
+  </Item>
+</Items>

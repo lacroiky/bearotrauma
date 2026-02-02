@@ -1,6 +1,0 @@
-<Item identifier="glorp_art_01" name="Angry Glorp" variantof="opdeco_propagandaposter4" scale="0.2">
-  <Sprite texture="%ModDir%/glorp_art_01.png" sourcerect="0,0,220,220" depth="0.55"  />
-</Item>
-
-# E:\SteamLibrary\steamapps\common\Barotrauma\Content\Map\Outposts\Art
-# E:\SteamLibrary\steamapps\common\Barotrauma\Content\Map\Outposts\OutpostStructurePrefabs.xml

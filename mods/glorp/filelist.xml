@@ -1,3 +1,3 @@
 <contentpackage name="glorp art" modversion="0.1.0" gameversion="1.11.5.0" corepackage="false">
-    <Structure file="%ModDir%/glorp_art_01.xml" />
+    <Item file="%ModDir%/glorp_poster.xml" />
 </contentpackage>
