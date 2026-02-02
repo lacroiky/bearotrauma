@@ -7,16 +7,18 @@ REPO_MOD_DIR="${REPO_DIR}/mods"
 testmod () {
     if [ -z "$1" ];
     then
-        echo "testing all mods in mods directory"
+        echo "updating all mods in mods directory"
         for dir in "${REPO_MOD_DIR}"/*/
         do 
             DIR_PATH=${dir%*/}
             DIR_NAME=$(basename "${DIR_PATH}")
-            echo "making clean install of mod: ${DIR_NAME}"
-            rm -rf "${LOCAL_MOD_DIR}/${DIR_NAME}"
+            echo "updating files for mod: ${DIR_NAME}"
             cp -r  "${DIR_PATH}" "${LOCAL_MOD_DIR}"
         done
+    else
+        echo "updating files for mod: ${1}"
+        cp -r  "${REPO_MOD_DIR}/${1}" "${LOCAL_MOD_DIR}"
     fi
 }
 
-testmod
+testmod "$1"
