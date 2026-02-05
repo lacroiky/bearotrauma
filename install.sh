@@ -13,6 +13,7 @@ testmod () {
             DIR_PATH=${dir%*/}
             DIR_NAME=$(basename "${DIR_PATH}")
             echo "updating files for mod: ${DIR_NAME}"
+            rm -rf "${LOCAL_MOD_DIR}/${DIR_NAME}"
             cp -r  "${DIR_PATH}" "${LOCAL_MOD_DIR}"
         done
     else
