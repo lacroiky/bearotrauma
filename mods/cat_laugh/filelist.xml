@@ -1,3 +1,0 @@
-<contentpackage name="glorp cat laugh" modversion="0.1.0" gameversion="1.11.5.0" corepackage="false">
-    <UIStyle file="%ModDir%/cat_laugh.xml" />
-</contentpackage>
